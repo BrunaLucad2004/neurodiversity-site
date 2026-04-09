@@ -35,16 +35,16 @@ btnDyslexia.addEventListener('click', () => {
 });
 
 // --- Desativar animações ---
-const btnMotion = document.getElementById('btn-motion');
-btnMotion.addEventListener('click', () => {
-  const on = body.classList.toggle('no-motion');
-  btnMotion.setAttribute('aria-pressed', on);
-  btnMotion.textContent = on ? 'Com animações' : 'Sem animações';
-});
+//const btnMotion = document.getElementById('btn-motion');
+//btnMotion.addEventListener('click', () => {
+//  const on = body.classList.toggle('no-motion');
+//  btnMotion.setAttribute('aria-pressed', on);
+//  btnMotion.textContent = on ? 'Com animações' : 'Sem animações';
+//});
 
 /* ============================================
    FORMULÁRIO
-   ============================================ */
+   ============================================ 
 function enviarFormulario() {
   const nome     = document.getElementById('nome').value.trim();
   const email    = document.getElementById('email').value.trim();
@@ -83,4 +83,4 @@ function enviarFormulario() {
   document.getElementById('assunto').value = '';
   document.getElementById('mensagem').value = '';
   document.getElementById('lgpd').checked = false;
-}
+}*/
