@@ -1,0 +1,17 @@
+.loginBox{
+  margin-top: 300px;
+  margin-bottom: 300px;
+  background-color: floralwhite;
+  width: 50%;
+  padding: 20px;
+}
+
+
+#rowButton {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#titletLogin {
+  font-weight: bold;
+}
+

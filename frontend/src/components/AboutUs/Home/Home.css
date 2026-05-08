@@ -1,0 +1,289 @@
+/* ============================================================
+   Home.css — CEDOMCA Home Page
+   ============================================================ */
+
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-root {
+  min-height: 100vh;
+  background-color: #A8CCC9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c2c2c;
+  font-size: var(--base-font-size, 15px);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.home-header {
+  background-color: #7BAAA7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+}
+
+.home-header-logo-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.home-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.home-logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.home-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-logo-title {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.05em;
+}
+
+.home-logo-subtitle {
+  font-size: 0.7em;
+  color: #1a1a1a;
+  opacity: 0.75;
+}
+
+/* Font size controls */
+.home-font-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  padding: 4px 10px;
+}
+
+.font-label {
+  font-size: 0.8em;
+  color: #555;
+  margin-right: 4px;
+}
+
+.font-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.font-btn:hover,
+.font-btn.active {
+  background: #e0f0ee;
+  color: #3a8a84;
+}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.home-nav {
+  background-color: #7BAAA7;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 32px 12px 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #1a1a1a;
+  padding: 6px 18px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active {
+  background: #fff;
+  color: #2c2c2c;
+  font-weight: 600;
+  border: 1px solid #d0d0d0;
+}
+
+/* ============================================================
+   MAIN
+   ============================================================ */
+.home-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+}
+
+/* Intro card */
+.home-intro-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-bottom: 36px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.home-intro-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+}
+
+.home-intro-text {
+  font-size: 0.92em;
+  color: #444;
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.home-intro-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Section title */
+.home-grid-title {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
+/* Card */
+.home-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 22px 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.home-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.home-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tags */
+.home-tag {
+  display: inline-block;
+  font-size: 0.72em;
+  font-weight: 600;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.tag-musica     { background-color: #7BAAA7; }
+.tag-audio      { background-color: #7BAAA7; }
+.tag-visual     { background-color: #7BAAA7; }
+.tag-arquivo    { background-color: #7BAAA7; }
+.tag-bibliografia { background-color: #7BAAA7; }
+.tag-video      { background-color: #7BAAA7; }
+
+.home-card-periodo {
+  font-size: 0.75em;
+  color: #888;
+}
+
+.home-card-title {
+  font-size: 1em;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.35;
+}
+
+.home-card-desc {
+  font-size: 0.85em;
+  color: #555;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.home-card-qty {
+  font-size: 0.78em;
+  color: #888;
+  margin-top: 6px;
+}
+
+/* ============================================================
+   HELP BUTTON
+   ============================================================ */
+.home-help-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #5a9e98;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.15s;
+}
+
+.home-help-btn:hover {
+  background: #3a8a84;
+}
